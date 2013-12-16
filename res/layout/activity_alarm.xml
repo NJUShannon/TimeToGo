@@ -1,0 +1,48 @@
+<ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/scrollView"
+        android:fillViewport="false">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <DatePicker
+                android:id="@+id/alarmDatePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp" />
+
+        <TimePicker
+                android:id="@+id/alarmTimePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/alarmDatePicker"/>
+        <CheckBox
+                android:id="@+id/if_repeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alarmRepeat"
+
+
+                android:layout_below="@+id/alarmTimePicker"/>
+        <Button
+                android:id="@+id/alarmCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Cancel"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/if_repeat"
+                />
+        <Button
+                android:id="@+id/alarmOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Ok"
+                android:layout_alignParentLeft="true" android:layout_marginLeft="118dp"
+                android:layout_below="@+id/if_repeat"/>
+
+    </RelativeLayout>
+</ScrollView>
